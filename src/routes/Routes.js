@@ -8,4 +8,8 @@ router.get("/allusers", UserController.getAllUser)
 router.post('/deleteuser', UserController.deleteUser)
 router.post('/updateuser', UserController.updateUser)
 
+
+const AppointmentController=require("../controllers/AppointController")
+router.post('/addappointment',AppointmentController.addAppointment)
+
 module.exports = router

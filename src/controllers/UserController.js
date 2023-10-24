@@ -34,6 +34,7 @@ exports.deleteUser = (req, res) => {
         });
 };
 
+
 exports.updateUser = (req, res) => {
     User.findByIdAndUpdate({ _id: req.body.uid },
         {
